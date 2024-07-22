@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d9d98d70a0.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+  />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  <style>
+    body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center align header text */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Style for the header text */
+header h2 {
+    color: #333; /* Dark gray text color */
+    font-size: 24px;
+}
+
+/* Center align slideshow */
+.slide {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Style for images inside .slide */
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for artwork section */
+div {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Style for artwork titles */
+div h2 {
+    font-size: 24px;
+    color: #333; /* Dark gray text color */
+    margin-bottom: 10px;
+}
+
+/* Style for artwork descriptions */
+div p {
+    color: #666; /* Medium gray text color */
+    line-height: 1.6;
+}
+
+/* Style for individual artwork images and descriptions */
+.img1, .img2, .img3 {
+    max-width: 80%; /* Adjust size as needed */
+    margin: 20px auto;
+}
+
+/* Style for artwork titles */
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style for font awesome icons (optional) */
+.fa {
+    margin-right: 5px;
+}
+    .slide{
+        width: 300px;
+        height: 480px;
+        margin: 0 auto;
+    }
+
+    img{
+            max-width: 300px;
+            height: 400px;
+            object-fit: fill;
+        }
+  </style>
+
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+        <h2>기안84 기안도(기묘한 섬):플로팅 온 대구 전시회</h2>
+    </header>
+    <div class="slide">
+        <img src="image/84img1.jpg" alt="">
+        <img src="image/84img3.jpg" alt="">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+        </script>
+    <script>
+        $('.slide').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots:true
+        });
+    </script>
+    <div><h2>위치,관람시간</h2></div>
+    <div>
+        <img src="image/time2.jpg" alt="" class="img4">
+        <img src="image/time.jpg" alt=""  class="img5">
+        <p>기간: 2024.7.5 - 8.4
+            <br>
+            장소: 더현대 대구 9층 더포럼 by 하이메 아욘
+            <br>
+            티켓가격: 8,400원
+        </p>
+    </div>
+    
+    <div>
+        <h2>작품</h2>
+    </div>
+    
+        <div>
+            <img src="image/ja.jpg" alt="" class="img1">
+            <h3>자화상</h3>
+            <p>패션왕부터 복학왕까지 10년동안 매주 웹툰을 연재 해왔다.
+            <br>
+            사람을 마주하는 시간보다 내가 만들어 낸'우기명'이라는 캐릭터를 마주하는 시간이 더 길었고,
+            <br>
+            그의 표정들을 그려낼 때마다 내 감정들을 곰곰이 되새겼다.
+            <br>
+            젊은 시절을 바쳐 만든 이 캐릭터의 표정들이 마치 내 자화상처럼 느껴진다.</p>
+            <img src="image/ja2.jpg" alt="" class="img2">
+            <h3>욕망의 자화상</h3>
+            <p>슬픈 건지, 기쁜 건지 매일같이 마주하는 감정들이지만 나도 모르는 내 감정.
+            <br>
+            어떤 상황에서도 마냥 잘 보이고 싶고, 늘 사랑받고 싶었다.
+            </p>
+            <img src="image/time4.jpg" alt="" class="img3">
+            <h3>시간</h3>
+            <p>10년동안 쉬지 않고 달려왔다. '청춘'이라는 보물은 얼음처럼 빠르게 녹아내렸다.
+                <br>
+                하지만 내 욕망은 가장 높은 자리의 왕관을 바라봤던 것 같다.
+            </p>
+
+        </div>
+        <script>
+            ScrollReveal().reveal('.img1',{
+                delay:400,
+                distance:'50px',
+                origin:'left',
+                reset: true
+            });
+            ScrollReveal().reveal('.img2',{
+                delay:600,
+                distance:'50px',
+                origin:'left',
+                reset: true
+            });
+            ScrollReveal().reveal('.img3',{
+                delay:800,
+                distance:'50px',
+                origin:'left',
+                reset: true
+            });
+            ScrollReveal().reveal('.img4',{
+                delay:400,
+                distance:'50px',
+                opacity: 0.3
+            });
+            ScrollReveal().reveal('.img5',{
+                delay:600,
+                distance:'50px',
+                opacity: 0.3
+            });
+        </script>
+        <div>
+            <h2>굿즈 판매</h2>
+        </div>
+        <div>
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA3MThfODcg%2FMDAxNzIxMjkzNDY5MjIz.UwbyD1YROzqQ3QteUYsTweoXHzLLcgXrO6qkILRDzDMg.QALtIU1SqdQgYMK4B3JmkBdzzU4_bBDzcHrg9ERx0dgg.JPEG%2FIMG_1907.jpg&type=sc960_832" alt="" class="img6">
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA3MTFfMTUg%2FMDAxNzIwNjYyMzcwMDg3.inb3M3CNEaPQ4dBWGh-ofyoglJe87D-hDnUDyGhk4d8g.wylcEHp34CXV33CW1S7wjk76b9dboRTSC2CcyaGlu3kg.JPEG%2Foutput_2055836667.jpg&type=sc960_832" alt="" class="img7">
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA3MDVfMjgg%2FMDAxNzIwMTU3MDY0MTk0.Wh3ju47IKrUCyqIMKd2gGQQbZTKVWQ-u69aiOnpbFo4g.j1bUovNgX3qlPMdI_Fsz9FISdNNj3Rh0tMISng25Fnog.JPEG%2F1.jpg&type=sc960_832" alt="" class="img8">
+        </div>
+
+        <script>
+            ScrollReveal().reveal('.img6',{
+                delay:400,
+                distance:'50px',
+                origin:'left',
+                reset: true
+            });
+            ScrollReveal().reveal('.img7',{
+                delay:600,
+                distance:'50px',
+                reset: true
+            });
+            ScrollReveal().reveal('.img8',{
+                delay:800,
+                distance:'50px',
+                origin:'right',
+                reset: true
+            });
+
+        </script>
+    
+</body>
+</html>
